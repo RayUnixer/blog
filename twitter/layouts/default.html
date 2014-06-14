@@ -37,11 +37,13 @@
       <div class="navbar-inner">
         <div class="container-narrow">
           <a class="brand" href="{{urls.base_path}}">{{ data.title }}</a>
-          <ul class="nav">
+          <ul class="nav pull-left">
+            <li class="divider-vertical"></li>
             {{# data.navigation?to__root }}
               {{> pages_list }}
             {{/ data.navigation?to__root }}
-            <ul class="nav pull-right"><li><a href="http://wiki.junqili.com">WIKI</a></li></li></ul>
+            <li class="divider-vertical"></li>
+            <li><a href="http://wiki.junqili.com">WIKI</a></li>
           </ul>
         </div>
       </div>
